@@ -1,6 +1,6 @@
 # Netscanner — Python Network Scanner
 
-**NetSpectre** is a powerful and educational Python-based tool that automates network reconnaissance using Nmap.  
+**NetScanner** is a powerful and educational Python-based tool that automates network reconnaissance using Nmap.  
 It performs:
 - 🧭 **Target Discovery**
 - ⚙️ **Port & Service Enumeration**
@@ -40,5 +40,5 @@ It performs:
 
 ### 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/rohitkattewar/NetSpectre.git
-cd NetSpectre
+git clone https://github.com/Rohitkattewar18/Netscanner
+cd NetScanner
