@@ -1,0 +1,71 @@
+──(venv)─(rohit㉿rohit)-[~/Desktop/scany]
+└─$ python3 scan.py --do-scan     
+
+🔍 No target specified. Please choose or enter a target:
+1️  Localhost (127.0.0.1) - Safe for testing
+2️  scanme.nmap.org - Public target allowed for learning
+3️  Custom IP / CIDR (e.g., 192.168.1.0/24 or 10.0.0.5)
+Enter 1 / 2 / 3 (default 1): 1
+[INFO] Using target: 127.0.0.1
+
+⚠️  WARNING: Only scan systems you own or have explicit permission to test.
+
+# ===== [TARGET DISCOVERY] =====
+# This is target discovery (Nmap ping scan). Command:
+nmap -sn 127.0.0.1
+[CMD] nmap -sn 127.0.0.1
+[INFO] Discovered 0 targets.
+[WARN] No targets discovered. Exiting.
+                                                                                                                                  
+┌──(venv)─(rohit㉿rohit)-[~/Desktop/scany]
+└─$ python3 scan.py --do-scan
+
+🔍 No target specified. Please choose or enter a target:
+1️  Localhost (127.0.0.1) - Safe for testing
+2️  scanme.nmap.org - Public target allowed for learning
+3️  Custom IP / CIDR (e.g., 192.168.1.0/24 or 10.0.0.5)
+Enter 1 / 2 / 3 (default 1): 2
+[INFO] Using target: scanme.nmap.org
+
+⚠️  WARNING: Only scan systems you own or have explicit permission to test.
+
+# ===== [TARGET DISCOVERY] =====
+# This is target discovery (Nmap ping scan). Command:
+nmap -sn scanme.nmap.org
+[CMD] nmap -sn scanme.nmap.org
+[INFO] Discovered 0 targets.
+[WARN] No targets discovered. Exiting.
+                                                                                                                                  
+┌──(venv)─(rohit㉿rohit)-[~/Desktop/scany]
+└─$ python3 scan.py --do-scan
+
+🔍 No target specified. Please choose or enter a target:
+1️  Localhost (127.0.0.1) - Safe for testing
+2️  scanme.nmap.org - Public target allowed for learning
+3️  Custom IP / CIDR (e.g., 192.168.1.0/24 or 10.0.0.5)
+Enter 1 / 2 / 3 (default 1): 3
+Enter your target IP or CIDR: 10.0.0.5
+[INFO] Using target: 10.0.0.5
+
+⚠️  WARNING: Only scan systems you own or have explicit permission to test.
+
+# ===== [TARGET DISCOVERY] =====
+# This is target discovery (Nmap ping scan). Command:
+nmap -sn 10.0.0.5
+[CMD] nmap -sn 10.0.0.5
+/home/rohit/Desktop/scany/scan.py:65: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow().isoformat()
+[INFO] Discovered 1 targets.
+
+
+========== Processing target: 10.0.0.5 ==========
+
+# ===== [PORT & SERVICE ENUMERATION] for 10.0.0.5 =====
+# This is port & service enumeration. Command:
+nmap -oX - -Pn -sV --top-ports 1000 10.0.0.5
+[CMD] nmap -oX - -Pn -sV --top-ports 1000 10.0.0.5
+[INFO] Found 2 port entries (may include closed/filtered).
+/home/rohit/Desktop/scany/scan.py:74: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).                                             
+  now = datetime.utcnow().isoformat()                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                             
+[Done] Orchestration finished. Results stored in results.db
